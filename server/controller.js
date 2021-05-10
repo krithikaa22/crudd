@@ -1,4 +1,3 @@
-const { uuid } = require('uuidv4');
 var Userdb = require('../model/model');
 //create new user
 exports.create = (req,res) => {
@@ -12,8 +11,7 @@ exports.create = (req,res) => {
         email: req.body.email,
         rno: req.body.rno,
         phno: req.body.phno,
-        pno: req.body.pno,
-        _id: uuid()
+        pno: req.body.pno
     })
     //save in db
     user
